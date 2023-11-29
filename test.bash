@@ -15,7 +15,7 @@ out=$(seq 10 | ./plus)
 -55
 3628800" ] || ng ${LINENO}
 
-[ "$res" = 0 ] && echo OK	# &&は左側が成功すると右側を実行
+[ "$res" = 0 ] && echo OK # &&は左側が成功すると右側を実行
 exit $res
 
 ### I/O ###
@@ -26,9 +26,9 @@ out=$(seq 10 | ./plus)
 
 ### STRANGE INPUT ###
 out=$(echo あ | ./plus)
-[ "$?" = 1 ]      || ng ${LINENO}
+[ "$?" = 1 ] || ng ${LINENO}
 [ "${out}" = "" ] || ng ${LINENO}
 
-out=$(echo | ./plus)	#空文字
-[ "$?" = 1 ]		|| ng ${LINENO}
-[ "${out}" = "" ]	|| ng ${LINENO}
+out=$(echo | ./plus) #空文字
+[ "$?" = 1 ] || ng ${LINENO}
+[ "${out}" = "" ] || ng ${LINENO}
