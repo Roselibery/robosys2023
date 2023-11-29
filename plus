@@ -18,6 +18,6 @@ for line in sys.stdin:
         ansc *= float(line)
 
 
-print("和",ansa)
-print("差",ansb)
-print("積",ansc)
+print("和"+str(ansa))
+print("差"+str(ansb))
+print("積"+str(ansc))
