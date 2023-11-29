@@ -3,21 +3,19 @@
 # SPDX-License-Identifier: BSD-3-Clause
 import sys
 
-ansa = 0
-ansb = 0
-ansc = 1
+ans = [0,0,1]
 
 for line in sys.stdin:
     try: 
-        ansa += int(line)   #intは文字列を整数に（失敗すると例外発生）
-        ansb -= int(line)
-        ansc *= int(line)
+        ans[0] += int(line)   #intは文字列を整数に（失敗すると例外発生）
+        ans[1] -= int(line)
+        ans[-1] *= int(line)
     except:
-        ansa += float(line)
-        ansb -= float(line)
-        ansc *= float(line)
+        ans[0] += float(line)
+        ans[1] -= float(line)
+        ans[-1] *= float(line)
 
 
-print("和"+str(ansa))
-print("差"+str(ansb))
-print("積"+str(ansc))
+print(ans[0])
+print(ans[1])
+print(ans[-1])

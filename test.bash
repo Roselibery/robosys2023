@@ -11,16 +11,18 @@ res=0
 　
 ### I/O TEST ###
 out=$(seq 10 | ./plus)
-[ "${out}" = "和55
-差-55
-積3628800" ] || ng ${LINENO}
+[ "${out}" = "55
+-55
+3628800" ] || ng ${LINENO}
 　
 [ "$res" = 0 ] && echo OK        # &&は左側が成功すると右側を実行
 exit $res
 
 ### I/O ###
-out=$(seq 5 | ./plus)
-[ "${out}" = 15 ] || ng ${LINENO}
+out=$(seq 10 | ./plus)
+[ "${out}" = "55
+-55
+3628800" ] || ng ${LINENO}
   　
 ### STRANGE INPUT ###
 out=$(echo あ | ./plus)
