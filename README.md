@@ -1,7 +1,7 @@
 # robosys2023
 
 ## plusコマンド
-![test](https://github.com/Roselibery/robosys2023/.github/workflows/test.yml/badge.svg)
+![test](https://github.com/Roselibery/robosys2023/actions/workflows/test.yml/badge.svg)
 
 * 標準入力から読み込んだ数値を足した結果を1行目，引いた結果を2行目，掛けた結果を3行目に表示する．
 
