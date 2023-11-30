@@ -2,6 +2,9 @@
 # SPDX-FileCopyrightText: 2023 Yuri Sawada
 # SPDX-License-Identifier: BSD-3-Clause
 
+echo "Running tests with Python 3:"
+$PYTHON3 $SCRIPT
+
 ng () {
   echo NG at Line $1
   res=1
